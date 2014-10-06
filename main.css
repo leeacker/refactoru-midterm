@@ -1,0 +1,43 @@
+ .wrapper{
+ 	background-color: Turquoise;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+   
+ }
+ .jumbotron{
+ 	width: 100%;
+height: 100%;
+position: absolute;
+top: 0px;
+left: 0px;
+background-position: 50% 0%!important;
+ section {
+  padding-top: 20%;
+ }
+ }
+ .container {
+ 	position: relative;
+ 	top: 700px;
+ }
+ .books>img {
+ 	position: relative;
+ }
+ #book3-flip {
+ 	top: 63px;
+ 	z-index: 14;
+ }
+ #book3 {
+ 	top: 120px;
+ 	z-index: 15;
+ }
+ #book1 {
+ 	top: 180px;
+ 	z-index: 16;
+ }
+ #book4 {
+ 	top: 229px;
+ 	left: 16px;
+ 	z-index: 17;
+ }
