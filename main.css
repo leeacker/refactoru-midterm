@@ -4,25 +4,67 @@
     -moz-background-size: cover;
     -o-background-size: cover;
      background-size: cover;
-   
+   background-image: -webkit-linear-gradient(30deg, #364549, transparent 5px, #fff);
+background-image: -moz-linear-gradient(30deg, #364549, transparent 5px, #fff);
+background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
  }
+
  .jumbotron{
  	width: 100%;
-height: 100%;
-position: absolute;
-top: 0px;
-left: 0px;
-background-position: 50% 0%!important;
- section {
-  padding-top: 20%;
+	height: 100vh;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: -2;
+	-webkit-text-fill-color:transparent;
+	-webkit-text-stroke:2px WhiteSmoke;
+	margin-bottom: 0;
  }
+#header {
+ 	position: absolute;
+ 	top: 40vh;
+ 	font-size: 5em;
  }
- .container {
- 	position: relative;
- 	top: 700px;
+ .foal {
+ 	-moz-transform: scaleX(-1);
+     -o-transform: scaleX(-1);
+     -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
+ 	 filter: FlipH;
+   -ms-filter: "FlipH";
+   position: absolute;
+   right: 5vw;
+   top: 40vh;
  }
+ .icon{
+ 	text-align: center;
+ 	bottom: 10%;
+ 	position: absolute;
+ }
+.fa {
+	text-align: center;
+	font-size: 4em;
+	margin: auto;
+	width: 100%;
+}
+ 
+ .slide {
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+#slide1, #slide3 {
+	background-color: moccasin;
+}
+#slide2, #slide4 {
+	background-color: turquoise;
+}
+ 
  .books>img {
  	position: relative;
+ 	
  }
  #book3-flip {
  	top: 63px;

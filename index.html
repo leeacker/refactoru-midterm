@@ -4,60 +4,68 @@
   <meta charset="utf-8">
   <title>Untitled</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	
-	
+	<nav id="slide0" data-slide="0" class="navbar-fixed-top" role='navigation'>
+		<div class="container">
+			<ul class="nav nav-pills navbar-right navigation">
+				<li data-slide="0" class="active"><a href="#">find</a></li>
+				<li data-slide="1"><a href="#">your</a></li>
+				<li data-slide="2"><a href="#">next</a></li>
+				<li data-slide="3"><a href="#">great</a></li>
+				<li data-slide="4"><a href="#">adventure</a></li>
+			</ul>
+		</div>	
+	</nav>
+
 	<div class="wrapper jumbotron">
 		<div class="container-fluid">
-			<h1>Hello, World</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum asperiores voluptatibus accusamus, doloribus? Eaque possimus harum pariatur optio repudiandae ipsum odio iusto et, minima quasi porro voluptates asperiores quos culpa.</p>
+			<div class="col-md-4">
+
+				<h1 id='header'>Turn that frown upside down</h1>
+		
+			</div>
+			<div class="col-md-8">
+				<img src="./images/foalteal.png" alt="" class="img-responsive foal" >
+			</div>
+			<div class="col-md-12 icon">
+				<i class="fa fa-toggle-down" id='bounce'></i>
+			</div>
+		</div>
+	</div>
+	
+	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0" data-stellar-offset-parent="true" >
+		<div class="col-md-6">
 			
 		</div>
+		<div class="col-md-6">	
+			<div  class="books">
+					<img data-stellar-ratio="1.1"
+				     src="./images/book4.png" class="img-responsive" id='book4' alt="Responsive image">
+					<img 
+				  
+				      src="./images/book1.png"  class="img-responsive" id='book1' alt="Responsive image">	
+					<img
+				     
+				      src="./images/book3.png" class="img-responsive" id='book3' alt="Responsive image">
+					<img 
+				      src="./images/book3-flip.png"  class="img-responsive" id='book3-flip' alt="Responsive image">
+					<img src="./images/book2.png"  class="img-responsive" id='book2' alt="Responsive image">
+			</div>
+		</div>	
 	</div>
-	<div class="container">
-		<div class="row"></div>
-			<div class="col-md-6">
-				<h3>Some Text</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi id tempora hic voluptate nihil at harum ab vel excepturi. Beatae officia quidem est nisi earum aperiam, voluptatibus rerum laudantium repellendus!</p>
-			</div>
-			<div class="col-md-6">
-				<div data-stellar-ratio="2" class="books" data-stellar-offset-parent="true">
-					<img data-stellar-ratio="2"
-	     data-stellar-vertical-offset="1100" src="./images/book4.png" class="img-responsive" id='book4' alt="Responsive image">
-					<img data-stellar-ratio="2.5"
-	     data-stellar-vertical-offset="1000" src="./images/book1.png" class="img-responsive" id='book1' alt="Responsive image">	
-					<img src="./images/book3.png" class="img-responsive" id='book3' alt="Responsive image">
-					<img src="./images/book3-flip.png" class="img-responsive" id='book3-flip' alt="Responsive image">
-					<img src="./images/book2.png" class="img-responsive" id='book2' alt="Responsive image">
-				</div>
-			</div>
-		<div class="row"></div>
-			<div class="col-md-6">
-				<h3>Some Text</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi id tempora hic voluptate nihil at harum ab vel excepturi. Beatae officia quidem est nisi earum aperiam, voluptatibus rerum laudantium repellendus!</p>
-			</div>
-			<div class="col-md-6">
-					<h3>Some Text</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi id tempora hic voluptate nihil at harum ab vel excepturi. Beatae officia quidem est nisi earum aperiam, voluptatibus rerum laudantium repellendus!</p>
-			</div>
-		</div>
-		<div class="row"></div>
-			<div class="col-md-6">
-				<h3>Some Text</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi id tempora hic voluptate nihil at harum ab vel excepturi. Beatae officia quidem est nisi earum aperiam, voluptatibus rerum laudantium repellendus!</p>
-			</div>
-			<div class="col-md-6">
-					<h3>Some Text</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi id tempora hic voluptate nihil at harum ab vel excepturi. Beatae officia quidem est nisi earum aperiam, voluptatibus rerum laudantium repellendus!</p>
-			</div>
-		</div>
 
-		</div>
-	</div>
+	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0"></div>
+	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0"></div>
+	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0"></div>
+
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
 	<script src="main.js"></script>
 
