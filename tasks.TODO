@@ -2,4 +2,41 @@
  ☐ log liked books, rating for books, interests
  ☐ add tags to existing books, allow users to add new tags
  ☐ allow user to create a collection under a specific category
- 
+
+
+   objects and things: 
+ ☐ user: read books, reated books, favorite genres, favorite authors, image, featured book, friends
+       ✔ create user function @done (14-10-07 14:45)
+       ☐ update user function
+       ✔ add book user function @done (14-10-07 14:45)
+       ☐ add/update image user function
+       ✔ add friends function (follow?) @done (14-10-07 14:45)
+      ✔ remove friends function @done (14-10-07 14:47)
+       ☐ featured book function
+       ☐ change title 
+       ☐ add title to array
+ ☐ Book: name, author, description, genre, tags, image, ratings
+     ☐ create book function
+     ☐ update book function
+     ☐ add tags function
+     ☐ rate book function
+     ☐ add genre function
+     ☐ users who like this function
+     ☐ what to read next function
+ ☐ genre: name, books, description, featured
+      ☐ update featured function
+      ☐ users who like this function
+ ☐ author: name, books, image
+     ☐ create author function
+     ☐ users who like this function
+     ☐ ratings function (?)
+     ☐ featured book function
+
+ ☐ Other Functions:
+      ☐ show user info on thumbnail mouseover
+
+
+
+  Wishful Thinkings: 
+    ☐ book discussions
+    ☐ share on social media

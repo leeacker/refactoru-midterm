@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Untitled</title>
+  <title>bex || book explorers</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 	<nav id="slide0" data-slide="0" class="navbar-fixed-top" role='navigation'>
@@ -19,7 +21,27 @@
 			</ul>
 		</div>	
 	</nav>
+	<!-- login popup box -->
+	
+		<div class="login thick-border col-md-6 .col-md-offset-3" id='login'>
+			<i class="fa fa-times" id='close-login'></i>
+			<h2>login to bex</h2><br>
+			<form action="" role='form'>
+				
+				 <div class="form-group">
+	    			<label for="inputuserName1">User Name</label>
+	    			<input type="username" class="form-control" id="inputuserName1" placeholder="Enter Username">
+	  			</div>
+	  			 <div class="form-group">
+	    			<label for="inputPassword1">Password</label>
+	    			<input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+	  			</div>
+	  			<button type="submit" class="btn btn-default">Login</button>
+			</form>
+		</div>
+	
 
+	<!-- end login popup box -->
 	<div class="wrapper jumbotron">
 		<div class="container-fluid">
 			<div class="col-md-4">
@@ -36,34 +58,226 @@
 		</div>
 	</div>
 	
-	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0" data-stellar-offset-parent="true" >
-		<div class="col-md-6">
-			
+	<div class="slide" id="slide1" data-slide="1" >
+		<!-- <img src="./images/recomponents/room.png" alt="" class="img-responsive room animate">
+		<img src="./images/recomponents/dragon.png" alt="" class="img-responsive dragon animate">
+
+		<img src="./images/recomponents/reading.png" alt="" class="img-responsive reading animate">
+		<img src="./images/recomponents/tiger.png" alt="" class="img-responsive tiger animate">
+		
+		<img src="./images/recomponents/unicorn.png" alt="" class="img-responsive unicorn animate">
+		<img src="./images/recomponents/fairy.png" alt="" class="img-responsive fairy animate">
+		<img src="./images/recomponents/fairy.png" alt="" class="img-responsive fairy animate">
+		<img src="./images/recomponents/fairy.png" alt="" class="img-responsive fairy2 animate"> -->
+		
+	</div>
+
+	<div class="slide" id="slide2" data-slide="2"></div>
+	<div class="slide" id="slide3" data-slide="3"></div>
+	<div class="slide" id="slide4" data-slide="4" ></div>
+
+	<div class="profile-show container">
+		
+	</div>
+	
+	<div class="templates container">
+<!-- Tag Template -->
+<button class='btn btn-info btn-sm' id='tag-template'></button> 
+
+<!-- Friend thumbnail template -->
+<img src="http://placekitten.com/g/50/50" alt="" class="friend img-thumbnail" id="friend-thumbnail-template">
+
+<!-- Profile Template: -->
+			<div class="row profile" id='profile-template'>
+
+				<div class="profile-wrapper">
+					<div class="col-md-2">
+						
+					</div>
+					<div class="col-md-3">
+						<img src="./images/leeacker.jpeg" alt="Lee Acker" class="img-responsive user-image">
+					</div>
+					<div class="col-md-7">
+						<h1 class='prof-name'>Lee Acker <span class="title">the green</span></h1>
+						<h3 id='fav-books' class='dotted-border'><strong>Favorite Books:</strong> <!-- <button class='btn btn-info btn-sm'>Harry Potter</button> <button class='btn btn-info btn-sm'> Pride and Prejudice</button> <button class='btn btn-info btn-sm'> World Without End</button> <button class='btn btn-info btn-sm'> The Century Trilogy</button> <button class='btn btn-info btn-sm'>Lord of the Rings</button> -->
+
+						</h3>
+						<h3 id='fav-genres' class='dotted-border'><strong>Favorite Genres:</strong> <!-- <button class='btn btn-info btn-sm'>Historical Fiction</button> <button class='btn btn-info btn-sm'>Fantasy</button>  <button class='btn btn-info btn-sm'>Sci-Fi</button> --></h3>
+						<h3 id="fav-authors" class='dotted-border'>
+							<strong>Favorite Authors: </strong>
+						</h3>
+						<div class="friends" class='dotted-border'>
+						<h3><strong>Friends:</strong></h3>
+						<div class="row">
+							<div class="col-md-12">
+								<img src="" alt="" class="friend img-thumbnail hidden" id="friend1">
+								<img src="" alt="" class="friend img-thumbnail hidden" id="friend2">
+								<img src="" alt="" class="friend img-thumbnail hidden" id="friend3">
+								<img src="" alt="" class="friend img-thumbnail hidden" id="friend4">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<img src="" alt="" class="friend img-thumbnail hidden" id="friend5">
+								<img src="" alt="" class="friend img-thumbnail hidden" id="friend6">
+								<img src="" alt="" class="friend img-thumbnail hidden" id="friend7">
+								<img src="" alt="" class="friend img-thumbnail hidden" id="friend8">
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						
+					</div>
+				</div>
 		</div>
-		<div class="col-md-6">	
-			<div  class="books">
-					<img data-stellar-ratio="1.1"
-				     src="./images/book4.png" class="img-responsive" id='book4' alt="Responsive image">
+
+
+		<!-- book profile template -->
+		<div class="row profile " id="book-template">
+			<div class="profile-wrapper">
+					<div class="col-md-2">
+						
+					</div>
+					<div class="col-md-3">
+						<img src="" alt="" class="img-responsive book-image">
+					</div>
+					<div class="col-md-7">
+						<h1 class='book-name'> <span class="author"></span>
+
+						</h1>
+					<div class='rating'>
+						<i id='star-1' class="fa fa-star-o"></i>
+						<i id='star-2' class="fa fa-star-o"></i>
+						<i id='star-3' class="fa fa-star-o"></i>
+						<i id='star-4' class="fa fa-star-o"></i>
+						<i id='star-5' class="fa fa-star-o"></i>
+					</div>
+						<h3 id='related-genres' class='dotted-border'><strong>Related Genres:</strong> 
+
+						</h3>
+						<h3 id="similar-books" class='dotted-border'>
+							<strong>Similar Books: </strong>
+						</h3>
+						<div class="friends" class='dotted-border'>
+						<h3><strong>Users who favorited this:</strong></h3>
+						<div class="row">
+							<div class="col-md-12">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user1">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user2">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user3">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user4">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user5">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user6">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user7">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user8">
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						
+					</div>
+				</div>
+			
+
+		</div>
+		<!-- end book template -->
+		
+		<!-- start genre template -->
+	<div class="row profile " id="genre-template">
+			<div class="profile-wrapper">
+					<div class="col-md-1">
+						
+					</div>
+					
+					<div class="col-md-10">
+						<h1 class='genre-name'> 
+
+						</h1>
+						
+						<h3 id="popular-books" class='dotted-border'>
+							<strong> Popular Books: </strong>
+						</h3>
+						<div class="friends" class='dotted-border'>
+						<h3><strong>Users who favorited this:</strong></h3>
+						<div class="row">
+							<div class="col-md-12">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user1">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user2">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user3">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user4">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user5">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user6">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user7">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user8">
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						
+					</div>
+				</div>
+			
+
+		</div>
+
+
+
+		<!-- start popup book template -->
+			<div class='thick-border popup bk-popup' id="book-popup-template">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="http://placekitten.com/g/80/110" alt="" class="img-responsive img-thumbnail popup-img">
+					</div>
+
+					<div class="col-md-8">
+						<!-- <h3>Book Title</h3>
+						<h5>Book Author</h5> -->
+					</div>
+					<div class='rating popup-rating' id='popup-rating'>
+						<i id='star-1' class="fa fa-star-o"></i>
+						<i id='star-2' class="fa fa-star-o"></i>
+						<i id='star-3' class="fa fa-star-o"></i>
+						<i id='star-4' class="fa fa-star-o"></i>
+						<i id='star-5' class="fa fa-star-o"></i>
+					</div>
+				</div>
+			</div>
+
+		<!-- end popup book template -->
+
+		<!-- Books stacking -->
+		<div  class="books">
+					<img
+				     src="./images/book4.png" class="img-responsive" id='book5' alt="Responsive image">
 					<img 
 				  
-				      src="./images/book1.png"  class="img-responsive" id='book1' alt="Responsive image">	
+				      src="./images/book1.png"  class="img-responsive" id='book4' alt="Responsive image">	
 					<img
 				     
 				      src="./images/book3.png" class="img-responsive" id='book3' alt="Responsive image">
 					<img 
-				      src="./images/book3-flip.png"  class="img-responsive" id='book3-flip' alt="Responsive image">
-					<img src="./images/book2.png"  class="img-responsive" id='book2' alt="Responsive image">
+				      src="./images/book3-flip.png"  class="img-responsive" id='book2' alt="Responsive image">
+					<img src="./images/book2.png"  class="img-responsive" id='book1' alt="Responsive image">
 			</div>
-		</div>	
-	</div>
+		<!-- end books stack -->
 
-	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0"></div>
-	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0"></div>
-	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0"></div>
+	</div>
 
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TimelineMax.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>

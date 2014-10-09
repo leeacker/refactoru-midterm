@@ -25,6 +25,17 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
  	top: 40vh;
  	font-size: 5em;
  }
+
+ #close-login {
+ 	position: relative;
+ 	top: 3%;
+ 	left: 98%;
+ 	color: turquoise;
+ 	font-size: 1.5em;
+ }
+ #close-login:hover {
+ 	color: firebrick;
+ }
  .foal {
  	-moz-transform: scaleX(-1);
      -o-transform: scaleX(-1);
@@ -41,7 +52,7 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
  	bottom: 10%;
  	position: absolute;
  }
-.fa {
+.fa-toggle-down {
 	text-align: center;
 	font-size: 4em;
 	margin: auto;
@@ -55,6 +66,47 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
 	position: relative;
 	overflow: hidden;
 }
+.animate {
+	position: absolute;
+}
+.room {
+	height: 100vh;
+}
+.reading {
+	top: 60%;
+	left: 41%;
+	height: 38%;
+}
+.tiger {
+	top: 67%;
+	left: 18%;
+	height: 30%;
+}
+.unicorn {
+	top: 50%;
+	left: 79%;
+}
+.dragon {
+	top: 10%;
+	left: 37%;
+}
+.fairy {
+	top: 9%;
+	left: 70%;
+	height: 15%;
+}
+.fairy2 {
+	-moz-transform: scaleX(-1);
+     -o-transform: scaleX(-1);
+     -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
+ 	 filter: FlipH;
+   -ms-filter: "FlipH";
+	top: 18%;
+	left: 30%;
+	height: 15%;
+}
+
 #slide1, #slide3 {
 	background-color: moccasin;
 }
@@ -66,7 +118,7 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
  	position: relative;
  	
  }
- #book3-flip {
+ #book2 {
  	top: 63px;
  	z-index: 14;
  }
@@ -74,12 +126,78 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
  	top: 120px;
  	z-index: 15;
  }
- #book1 {
+ #book4 {
  	top: 180px;
  	z-index: 16;
  }
- #book4 {
+ #book5 {
  	top: 229px;
  	left: 16px;
  	z-index: 17;
  }
+
+ .user-image {
+ 	border-radius: 20px;
+ 	margin-top: 20px;
+ }
+ .book-image {
+ 	height: 70%;
+ }
+ .profile, .thick-border {
+ 	border-radius: 20px;
+ 	border: 10px solid turquoise;
+ 	box-shadow: 7px 7px 7px;
+ }
+ .profile-wrapper {
+ 	margin: 50px;
+ }
+ .dotted-border{
+ 	padding: 10px;
+ 	border: 1px dashed turquoise;
+ 	border-radius: 20px;
+ }
+.friends {
+	padding: 10px 24%;
+}
+.title, span.author {
+	color: rgba(0,0,0,0.3);
+	font-size: .6em;
+	line-height: 1em;
+}
+.popup {
+	position: absolute;
+	width: 500px;
+	height: 150px;
+	text-align: center;
+	background-color: rgba(255,255,255, 0.9);
+}
+.popup-img {
+	height: 130px;
+}
+.login {
+	position: absolute;
+	background-color: rgba(255,255,255, 0.8);
+	top: 35%;
+	left: 30%;
+	padding: 25px;
+}
+.login>h2 {
+	-webkit-text-fill-color:transparent;
+	-webkit-text-stroke:1px Black;
+}
+.rating {
+	display: inline;
+	font-size: 1.5em;
+}
+
+i {
+	color: GoldenRod;
+}
+#popup-rating i {
+	font-size: .7em;
+}
+img.friend {
+	height: 60px;
+	width: 60px;
+}
+
