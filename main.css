@@ -134,6 +134,7 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
 	/*height: 150px;*/
 	text-align: center;
 	background-color: rgba(255,255,255, 0.9);
+	z-index: 20000;
 }
 .popup-img {
 	height: 130px;
