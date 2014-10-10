@@ -3,41 +3,35 @@
 <head>
   <meta charset="utf-8">
   <title>bex || book explorers</title>
-  <!-- <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" type="text/css" href="bootstrap-min.css">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<div class="container">
-		<nav id="slide0" class="navbar-fixed-top" role='navigation'>
-			 <a class="navbar-brand" href="#">bex</a>
+<div class="container ">
+	<nav id="slide0" data-slide="0" class="navbar-fixed-top" role='navigation'>
+		
 			<ul class="nav nav-pills navbar-right navigation">
-				<li  class="hidden"><a href="#" id='profile-link'>profile</a></li>
-				<li  class="hidden"><a href="#" id='home-link'>home</a></li>
-				<li  class=''><a href="#" id='about-link'>what is bex?</a></li>
-				<li  class='hidden'><a href="#" id='books-link'>my books</a></li>
-				<!-- <li  class='hidden'><a href="#">my authors</a></li> -->
-				<!-- <li  class='hidden'><a href="#">my genres</a></li> -->
-				<li class-''><a href="#" id='login-nav'>log in</a></li>
-				<li class='hidden'><a href="#" id='logout-nav'>log out</a></li>
-				<li class=''><a href="#" id='sign-up-nav'>sign up</a></li>
+				<li data-slide="0" class="active"><a href="#">find</a></li>
+				<li data-slide="1"><a href="#">your</a></li>
+				<li data-slide="2"><a href="#">next</a></li>
+				<li data-slide="3"><a href="#">great</a></li>
+				<li data-slide="4"><a href="#">adventure</a></li>
 			</ul>
 			
-		</nav>
-	</div>	
+	</nav>
+	</div>
 	<!-- login popup box -->
 	
-		<div class="login thick-border col-md-6 col-md-offset-3 " id='login' style="display: none">
+		<div class="login thick-border col-md-6 .col-md-offset-3" id='login'>
 			<i class="fa fa-times" id='close-login'></i>
 		<!-- alert box for incorrect username -->
-			<!-- <div class="alert alert-danger alert-dismissible hidden" role="alert" id='login-danger'>
-		  		<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true"> &times;</span><span class="sr-only">Close</span></button> -->
+			<div class="alert alert-danger alert-dismissible hidden" role="alert" id='login-danger'>
+		  		<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true"> &times;</span><span class="sr-only">Close</span></button>
 		  		 
-			<!-- </div> -->
+			</div>
 		<!-- end alert box for incorrect username -->
 
 
@@ -55,43 +49,9 @@
 	  			<button type="submit" class="btn btn-default" id='login-submit'>Login</button>
 			</form>
 		</div>
-
-	<!-- end login popup box -->
-	<!-- start sign-up popup -->
-	<div class="signup thick-border col-md-6 col-md-offset-3" id='signup' style='display: none'>
-			<i class="fa fa-times" id='close-signup'></i>
 	
 
-			<h2>sign up for bex <em><h4>and kick those blues</h4></em></h2><br>
-			<form action="" role='form' id='signup-form'>
-				
-				 <div class="form-group">
-	    			<label for="inputfirstName">First Name</label>
-	    			<input type="username" class="form-control" id="inputfirstName" placeholder="Enter First Name">
-	  			</div>
-	  			<div class="form-group">
-	    			<label for="inputlastName">Last Name</label>
-	    			<input type="username" class="form-control" id="inputlastName" placeholder="Enter Last Name">
-	  			</div>
-				 <div class="form-group">
-	    			<label for="inputuserName1">User Name</label>
-	    			<input type="username" class="form-control" id="inputuserName2" placeholder="Enter Username">
-	  			</div>
-	  			 <div class="form-group">
-	    			<label for="newPassword1">Password</label>
-	    			<input type="password" class="form-control" id="newPassword1" placeholder="New Password">
-	  			</div>
-	  			<div class="form-group">
-	    			<label for="newPassword2">Verify Password</label>
-	    			<input type="password" class="form-control" id="newPassword2" placeholder="Retype Password">
-	  			</div>
-
-	  			<button type="submit" class="btn btn-default" id='login-submit'>Sign Up</button>
-			</form>
-		</div>
-
-
-	<!-- end sign-up popup -->
+	<!-- end login popup box -->
 	<div class="wrapper jumbotron">
 		<div class="container-fluid main-container">
 			<div class="col-md-4">
@@ -108,35 +68,29 @@
 		</div>
 	</div>
 	
-	<div class="slide container" id="slide1" data-slide="1" style="display: none">
-		<div class="row">
-			<div class="what-is-bex bex-what col-md-4 col-md-offset-2">
-				<h1>what is bex?</h1>
-				<h2 class= 'about-initial'>In order to effectively answer this question, we must first explore the question: What is readers desolation? So lets try this again: </h2>
-				<h2 class="about-after" style="display: none">Bex is a weapon against readers' desolation. Bex is here to make sure you never have to wonder where to go after finishing a really awesome book. Bex is here to show you where your next great adventure lies.</h2>
-				<a href="" class="readers-des" >What is Reader's Desolation?</a>
-			</div>
-			<div class="what-is-r-d col-md-4 col-md-offset-6" style="display: none">
-				<h1>what is readers' desolation?</h1>
-				<h2>Readers' desolation is the terrible feeling of sadness and loss one feels after reading a really, really, amazing book. It's the feeling of stumbling through the motions because you don't know what to do now that the characters of said book have suddenly disappeared from your life. It's the agonizing despair that strikes the heart when you have no idea where to go or what to read next. So now we can traverse back to the orginal question:</h2>
-				<a href="" class="what-is-bex-link">what is bex?</a>
-			</div>
-		</div>
-	</div>	
-	<div class="slide container" id="slide2" data-slide="1" style="display: none">
-		<div class="row">
-			<div class="user-info col-md-8 col-md-offset-2">
-				
-			</div>
-		</div>
-	</div>
+	<div class="slide" id="slide1" data-slide="1" >
+		<!-- <img src="./images/recomponents/room.png" alt="" class="img-responsive room animate">
+		<img src="./images/recomponents/dragon.png" alt="" class="img-responsive dragon animate">
+
+		<img src="./images/recomponents/reading.png" alt="" class="img-responsive reading animate">
+		<img src="./images/recomponents/tiger.png" alt="" class="img-responsive tiger animate">
+		
+		<img src="./images/recomponents/unicorn.png" alt="" class="img-responsive unicorn animate">
+		<img src="./images/recomponents/fairy.png" alt="" class="img-responsive fairy animate">
+		<img src="./images/recomponents/fairy.png" alt="" class="img-responsive fairy animate">
+		<img src="./images/recomponents/fairy.png" alt="" class="img-responsive fairy2 animate"> -->
+		
 	</div>
 
+	<div class="slide" id="slide2" data-slide="2"></div>
+	<div class="slide" id="slide3" data-slide="3"></div>
+	<div class="slide" id="slide4" data-slide="4" ></div>
 
-<!-- Template div -->
-
+	<div class="profile-show container">
+		
+	</div>
 	
-	<div class="templates container hidden">
+	<div class="templates container">
 <!-- Tag Template -->
 <button class='btn btn-info btn-sm' id='tag-template'></button> 
 
@@ -147,8 +101,10 @@
 			<div class="row profile" id='profile-template'>
 
 				<div class="profile-wrapper">
-		
-					<div class="col-md-5 ">
+					<div class="col-md-2">
+						
+					</div>
+					<div class="col-md-3">
 						<img src="./images/leeacker.jpeg" alt="Lee Acker" class="img-responsive user-image">
 					</div>
 					<div class="col-md-7">
@@ -190,8 +146,10 @@
 		<!-- book profile template -->
 		<div class="row profile " id="book-template">
 			<div class="profile-wrapper">
-				
-					<div class="col-md-5 ">
+					<div class="col-md-2">
+						
+					</div>
+					<div class="col-md-3">
 						<img src="" alt="" class="img-responsive book-image">
 					</div>
 					<div class="col-md-7">
@@ -215,23 +173,25 @@
 						<h3><strong>Users who favorited this:</strong></h3>
 						<div class="row">
 							<div class="col-md-12">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user1">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user2">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user3">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user4">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user1">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user2">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user3">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user4">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user5">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user6">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user7">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user8">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user5">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user6">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user7">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user8">
 							</div>
 						</div>
 						</div>
 					</div>
-					
+					<div class="col-md-2">
+						
+					</div>
 				</div>
 			
 
@@ -257,18 +217,18 @@
 						<h3><strong>Users who favorited this:</strong></h3>
 						<div class="row">
 							<div class="col-md-12">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user1">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user2">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user3">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user4">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user1">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user2">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user3">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user4">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user5">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user6">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user7">
-								<img src="" alt="" class="user img-thumbnail hidden" id="user8">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user5">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user6">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user7">
+								<img src="http://placekitten.com/g/50/50" alt="" class="user img-thumbnail" id="user8">
 							</div>
 						</div>
 						</div>

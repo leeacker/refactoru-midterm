@@ -1,4 +1,6 @@
- .wrapper{
+ 
+
+ .wrapper {
  	background-color: Turquoise;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -16,24 +18,24 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
 	top: 0px;
 	left: 0px;
 	z-index: -2;
-	-webkit-text-fill-color:transparent;
-	-webkit-text-stroke:2px WhiteSmoke;
 	margin-bottom: 0;
  }
 #header {
  	position: absolute;
  	top: 40vh;
  	font-size: 5em;
+ 	-webkit-text-fill-color:transparent;
+	-webkit-text-stroke:2px WhiteSmoke;
  }
 
- #close-login {
+ #close-login, #close-signup {
  	position: relative;
  	top: 3%;
  	left: 98%;
  	color: turquoise;
  	font-size: 1.5em;
  }
- #close-login:hover {
+ #close-login:hover, #close-signup:hover {
  	color: firebrick;
  }
  .foal {
@@ -57,6 +59,7 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
 	font-size: 4em;
 	margin: auto;
 	width: 100%;
+	color: WhiteSmoke;
 }
  
  .slide {
@@ -64,55 +67,10 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
 	width: 100%;
 	height: 100vh;
 	position: relative;
-	overflow: hidden;
-}
-.animate {
-	position: absolute;
-}
-.room {
-	height: 100vh;
-}
-.reading {
-	top: 60%;
-	left: 41%;
-	height: 38%;
-}
-.tiger {
-	top: 67%;
-	left: 18%;
-	height: 30%;
-}
-.unicorn {
-	top: 50%;
-	left: 79%;
-}
-.dragon {
-	top: 10%;
-	left: 37%;
-}
-.fairy {
-	top: 9%;
-	left: 70%;
-	height: 15%;
-}
-.fairy2 {
-	-moz-transform: scaleX(-1);
-     -o-transform: scaleX(-1);
-     -webkit-transform: scaleX(-1);
-     transform: scaleX(-1);
- 	 filter: FlipH;
-   -ms-filter: "FlipH";
-	top: 18%;
-	left: 30%;
-	height: 15%;
+	/*overflow: hidden;*/
+	padding-top: 50px;
 }
 
-#slide1, #slide3 {
-	background-color: moccasin;
-}
-#slide2, #slide4 {
-	background-color: turquoise;
-}
  
  .books>img {
  	position: relative;
@@ -143,10 +101,14 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
  .book-image {
  	height: 70%;
  }
+ .profile {
+ 	position: relative;
+ }
  .profile, .thick-border {
  	border-radius: 20px;
  	border: 10px solid turquoise;
  	box-shadow: 7px 7px 7px;
+ 	background-color: rgba(255,255,255, 0.8);
  }
  .profile-wrapper {
  	margin: 50px;
@@ -167,7 +129,7 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
 .popup {
 	position: absolute;
 	width: 500px;
-	height: 150px;
+	/*height: 150px;*/
 	text-align: center;
 	background-color: rgba(255,255,255, 0.9);
 }
@@ -176,12 +138,19 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
 }
 .login {
 	position: absolute;
-	background-color: rgba(255,255,255, 0.8);
+	background-color: rgba(255,255,255, 0.6);
 	top: 35%;
-	left: 30%;
 	padding: 25px;
+	color: DimGray;
 }
-.login>h2 {
+.signup {
+	position: absolute;
+	background-color: rgba(255,255,255, 0.6);
+	top: 15%;
+	padding: 25px;
+	color: DimGray;
+}
+.login>h2, .signup>h2 {
 	-webkit-text-fill-color:transparent;
 	-webkit-text-stroke:1px Black;
 }
@@ -199,5 +168,10 @@ i {
 img.friend {
 	height: 60px;
 	width: 60px;
+}
+#k-bye {
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 
