@@ -26,6 +26,7 @@ var bible = new Book('The Bible', 'A Whole Buncha People');
 aliens.profile();
 bible.profile();
 
+
 // Adding sample genres
 var scifi = new Genre('Sci-Fi', 'the Space Cadet');
 var histFiction = new Genre('Historical Fiction', 'of the Court');

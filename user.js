@@ -30,26 +30,9 @@ User.prototype.renderFriends = function(){
 	console.log(this.friends);
 	var thisUser = this;
 
-	if(this.friends.length === 1){
-	var friend = this.friends[0]; 
-
-	var thumbnail = this.element.find('#friend1');
-
-	thumbnail.attr('src', this.friends[0].img)
-		.removeClass('hidden');
-	thumbnail.on('mouseover', function(){
-		thumbnail.after(friend.popupBox);
-	});
-	thumbnail.on('mouseout', function(){ 
-		thumbnail.siblings('.bk-popup').detach();
-	});
-	thumbnail.on('click', function(){
-				$('.profile').detach();
-				$('.user-info').append(friend.element);
-			});
-	} else {
+	
 	$.each(this.randomFriends(), function(i, friend){
-		console.log(friend, thisUser);
+		console.log("friend, thisUser:", friend, thisUser);
 		var thumbnail = thisUser.element.find('#friend'+ i);
 
 		thumbnail.attr('src', friend.img)
@@ -67,7 +50,7 @@ User.prototype.renderFriends = function(){
 				$('.user-info').append(friend.element);
 			});
 	});
-}
+
 };
 
 // Method for creating a new user:
@@ -89,6 +72,11 @@ User.prototype.profile = function(){
 	this.renderNameTitle();
 
 	this.popup(name, this.title, this.img);
+
+	this.element.on('click', '#books-i', function(){
+	console.log('click!');
+	$('#book-add').toggleClass('hidden');
+	});
 
 	var user = this;
 	// fill in favorite books section of profile

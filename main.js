@@ -19,6 +19,7 @@ var dangerAlert = $('<div class="alert alert-danger alert-dismissible" role="ale
 var successAlert = $('<div class="alert alert-success alert-dismissible" role="alert" id=\'login-danger\'><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true"> &times;</span><span class="sr-only">Close</span></button></div>');
 var alertClose = $('<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true"> &times;</span><span class="sr-only">Close</span></button>');
 var userInfoDiv = $('<div class="row"><div class="user-info col-md-9 col-md-offset-1"></div></div>');
+var friendThumbnailTemplate = $('<img src="" alt="" class="user img-thumbnail hidden">')
 
 ////////////////////////////
 // CONSTRUCTOR CREATION:  //

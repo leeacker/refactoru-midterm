@@ -20,6 +20,8 @@ Book.prototype.profile = function(){
 
 	this.renderNameAuthor();
 
+	currentBook.popup(title, author, img);
+	
 	$.each(this.genres, function(i, genre){
 		var button = tagTemplate.clone();
 
@@ -39,7 +41,7 @@ Book.prototype.profile = function(){
 	
 	// render popup for book
 	
-	this.popup(title, author, img);
+	
 	var book = this;
 	// create mouseover and click events for star icons
 	this.element.on('click', '.rating>i', function(){

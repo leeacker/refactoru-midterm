@@ -71,7 +71,9 @@ background-image: linear-gradient(30deg, #364549, transparent 1px, #fff);
 	padding-top: 50px;
 }
 
- 
+ .fa-plus-circle{
+ 	opacity: .4;
+ }
  .books>img {
  	position: relative;
  	

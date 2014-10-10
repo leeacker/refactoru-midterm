@@ -199,6 +199,7 @@ $('#login-submit').on('click', function(e){
 	 	
 	 	$('.navigation').find('li').toggleClass('hidden');
 	 	$('#home-link').closest('li').toggleClass('hidden');
+	 	userProfile.find('.fa-plus-circle').toggleClass('hidden');
 	}
 });
 $('button').on('click', '.close', function(e){
@@ -220,4 +221,13 @@ $("form").on('keypress', function(e) {
     }
 });
 
+$('#book-add').on('submit', function(e){
+	e.preventDefault();
+	var bookname = $('#bookName1').val();
+	var book = mainLibrary.suggestExistingName(bookname);
+
+	roy.addFavBook(book);
+	$('#book-add').toggleClass('hidden');
+
+});
 
